@@ -3,9 +3,18 @@
       package="com.metronome"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name="MainActivity"
-                  android:label="@string/app_name">
+    <uses-sdk 
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18"
+        android:maxSdkVersion="18"
+    />
+    
+    
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+        <activity android:name=".MainActivity" 
+                  android:screenOrientation="portrait"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NotitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

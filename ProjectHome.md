@@ -1,0 +1,1 @@
+app allows you to program in entire song with different time signatures and tempo changes.
